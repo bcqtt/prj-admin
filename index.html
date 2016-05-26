@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body style="height:100%;">
+    <nav class="navbar navbar-default navbar-fixed-top no-margin">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header fixed-brand">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
+			  <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+			</button>
+			<a class="navbar-brand" style="color: #fff;" href="#"><i class="fa fa-rocket fa-4"></i> MyConsole</a>
+		</div><!-- navbar-header-->
+		<a href="login.html" class="roll-nav roll-right J_tabExit" style="float:right;line-height:50px;"><i class="fa fa fa-sign-out"></i> 退出</a>
+    </nav>
+    <div id="wrapper" style="position:absolute;top:50px;bottom:0px;">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+ 
+                <li class="active">
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> 模块1</a>
+                       <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="test1.html" class="J_menuItem">菜单1</a></li>
+                        <li><a href="#">菜单2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> 模块2</a>
+                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                        <li><a href="#" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
+ 
+                    </ul>
+                </li>
+                <li>
+                    <a href="test1.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>菜单</a>
+                </li>
+                <li>
+                    <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>菜单</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span>菜单</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>菜单</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>菜单</a>
+                </li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+
+		<div class="row content-tabs" style="margin-right:0px;">
+			<button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+			</button>
+			<nav class="page-tabs J_menuTabs">
+				<div class="page-tabs-content">
+					<a href="javascript:;" class="active J_menuTab" data-id="hello.html">首页</a>
+				</div>
+			</nav>
+			<button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
+			</button>
+			<div class="btn-group roll-nav roll-right">
+				<button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
+
+				</button>
+				<ul role="menu" class="dropdown-menu dropdown-menu-right">
+					<li class="J_tabShowActive"><a>定位当前选项卡</a>
+					</li>
+					<li class="divider"></li>
+					<li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+					</li>
+					<li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="row J_mainContent" id="content-main">
+			<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="hello.html" frameborder="0" data-id="hello.html" seamless></iframe>
+		</div>
+    </div>
+    <!-- /#wrapper
+	<footer class="en text-center navbar-fixed-bottom"> 
+	
+	</footer> -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sidebar_menu.js"></script>
+	<script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="js/layer/layer.min.js"></script>
+<script src="js/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/hplus.min.js"></script>
+<script type="text/javascript" src="js/contabs.min.js"></script>
+</body>
+</html>
