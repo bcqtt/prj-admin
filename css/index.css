@@ -7128,3 +7128,49 @@ body.skin-3 {
 	background-color: #336699;
 }
 
+#toggleBtn{
+	position: absolute;
+	left:230px;
+	height: 50px;
+	top: 50%;
+	transition: all 0.2s ease 0s;
+    width: 20px;
+    z-index: 3;
+	
+}
+#toggleBtn .navbar-collapse-inner{
+	overflow: hidden;
+    position: relative;
+    top: -50%;
+}
+#toggleBtn .navbar-collapse-bg{
+	border-color: transparent #777 transparent -moz-use-text-color;
+    border-style: solid solid solid none;
+    border-width: 9px 13px 9px medium;
+    left: auto;
+    right: 0;
+	height: 50px;
+	position: absolute;
+    top: 0;
+    transition: all 0.1s ease 0s, all 0.1s ease 0s;
+    width: 0;
+}
+#toggleBtn .navbar-collapse{
+	overflow: hidden;
+    position: relative;
+    top: -50%;
+	left: auto;
+    right: -7px;
+	cursor: pointer;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    transition: all 0.1s ease 0s, all 0.1s ease 0s;
+}
+#toggleBtn .navbar-collapse span{
+	font-size: 12px;
+    line-height: 50px;
+    right: 14px;
+    color: #bbb;
+}
+
