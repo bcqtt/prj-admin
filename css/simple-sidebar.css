@@ -52,9 +52,16 @@
 /* Sidebar Styles */
 
 .sidebar-nav {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav-mine {
+    top: 0;
+    width: 70px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -123,4 +130,17 @@
         position: relative;
         margin-right: 0;
     }
+}
+
+/*左边栏变形样式*/
+.sidebar-fold{
+	-moz-user-select: none;
+    background: #394555 none repeat scroll 0 0;
+    color: #aeb9c2;
+    cursor: pointer;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px !important;
+    text-align: center;
+    width: 100%;
 }

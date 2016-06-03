@@ -28,19 +28,19 @@
     <div id="wrapper" style="position:absolute;top:50px;bottom:0px;">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
- 
+			<div id="sidebarToggleBtn" class="sidebar-fold" ><span id="sidebarToggleBtn-ico" class="fa fa-square"></span></div>
+            <ul class="sidebar-nav nav-stacked" id="menu">
                 <li class="active">
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> 模块1</a>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x " aria-hidden="true"></i></span> 模块1</a>
                        <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                        <li><a href="test1.html" class="J_menuItem">菜单1</a></li>
-                        <li><a href="#">菜单2</a></li>
+                        <li><a href="test1.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>菜单1</a></li>
+                        <li><a href="tabs.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>菜单2</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span> 模块2</a>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x"></i></span> 模块2</a>
                     <ul class="nav-pills nav-stacked" style="list-style-type:none;">
-                        <li><a href="hello.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
+                        <li><a href="hello2.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link1</a></li>
                         <li><a href="#" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>link2</a></li>
  
                     </ul>
@@ -61,6 +61,37 @@
                     <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>菜单</a>
                 </li>
             </ul>
+			<!-- 迷你导航栏 -->
+			<ul class="sidebar-nav nav-stacked" id="menu-mine" style="display:none;">
+                <li class="active">
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="模块1"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x " aria-hidden="true"></i></span>●</a>
+                       <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello.html" class="J_menuItem" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="菜单1"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                        <li><a href="test1.html" class="J_menuItem" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="模块2"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x"></i></span>●</a>
+                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello2.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                        <li><a href="tabs.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users fa-stack-1x "></i></span>●</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x"></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file fa-stack-1x "></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-taxi fa-stack-1x "></i></span>●</a>
+                </li>
+                
+            </ul>
+			<!--
 			<div id="toggleBtn">
 				<div class="navbar-collapse-inner">
 					<div class="navbar-collapse-bg"></div>
@@ -68,8 +99,8 @@
 						<span class="glyphicon glyphicon-transfer"></span>
 					</div>
 				</div>
-				
 			</div>
+			-->
         </div><!-- /#sidebar-wrapper -->
 
 		<div class="row content-tabs" style="margin-right:0px;">

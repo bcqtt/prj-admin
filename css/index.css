@@ -7128,6 +7128,7 @@ body.skin-3 {
 	background-color: #336699;
 }
 
+/* 左边栏收缩按钮 
 #toggleBtn{
 	position: absolute;
 	left:230px;
@@ -7136,7 +7137,6 @@ body.skin-3 {
 	transition: all 0.2s ease 0s;
     width: 20px;
     z-index: 3;
-	
 }
 #toggleBtn .navbar-collapse-inner{
 	overflow: hidden;
@@ -7166,11 +7166,19 @@ body.skin-3 {
     position: relative;
     text-align: center;
     transition: all 0.1s ease 0s, all 0.1s ease 0s;
+	-o-transition: all 0.1s ease,0.1s ease;
+    -ms-transition: all 0.1s ease,0.1s ease;
+    -moz-transition: all 0.1s ease,0.1s ease;
+	-webkit-transition: all 0.1s ease,0.1s ease;
 }
 #toggleBtn .navbar-collapse span{
 	font-size: 12px;
     line-height: 50px;
     right: 14px;
     color: #bbb;
-}
+}*/
 
+.nav-pills{
+	padding-left: 0px;
+	background-color: #222
+}
