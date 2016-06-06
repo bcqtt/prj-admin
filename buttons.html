@@ -1,0 +1,436 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+     <title>按钮</title>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 
+	 <!-- 本样式是doc演示需要，正式使用时可不引入 -->
+	 <link href="doc/css/docs.css" rel="stylesheet">
+	 
+	 <script src="js/jquery.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script src="doc/js/docs.js"></script>
+</head>
+
+<body>
+  <h1 id="glyphicons" class="page-header">
+	<a class="anchorjs-link " href="#glyphicons" aria-label="Anchor link for: glyphicons"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	这里只列出了开发过程中常用的样式，需要更多样式可前往bootstrap
+  </h1>
+
+    <form class="bs-example" data-example-id="btn-tags">
+		<a class="btn btn-default" href="#" role="button">Link</a>
+		<button class="btn btn-default" type="submit">Button</button>
+		<input class="btn btn-default" type="button" value="Input">
+		<input class="btn btn-default" type="submit" value="Submit">
+    </form>
+	
+  <div class="bs-example">
+    <button type="button" class="btn btn-default">（默认样式）Default</button>
+    <button type="button" class="btn btn-primary">（首选项）Primary</button>
+    <button type="button" class="btn btn-success">（成功）Success</button>
+    <button type="button" class="btn btn-info">（一般信息）Info</button>
+    <button type="button" class="btn btn-warning">（警告）Warning</button>
+    <button type="button" class="btn btn-danger">（危险）Danger</button>
+    <button type="button" class="btn btn-link">（链接）Link</button>
+  </div>
+  
+  <div class="bs-example" data-example-id="btn-sizes">
+    <p>
+      <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+      <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+      <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+      <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+      <button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button>
+    </p>
+  </div>
+  
+  <p>通过给按钮添加 <code>.btn-block</code> 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。如下例子</p>
+  <div class="bs-example" data-example-id="block-btns">
+    <div class="well center-block" style="max-width: 400px;">
+      <button type="button" class="btn btn-primary btn-lg btn-block">（块级元素）Block level button</button>
+      <button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	按钮组基本实例
+  </h2>
+  <div class="bs-example" data-example-id="simple-button-group">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	按钮工具栏
+  </h2>
+  <div class="bs-example" data-example-id="simple-button-toolbar">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group" role="group" aria-label="First group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+        <button type="button" class="btn btn-default">4</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-default">5</button>
+        <button type="button" class="btn btn-default">6</button>
+        <button type="button" class="btn btn-default">7</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-default">8</button>
+      </div>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	按钮组尺寸
+  </h2>
+  <div class="bs-example" data-example-id="button-group-sizing">
+    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group" role="group" aria-label="Default button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	嵌套
+  </h2>
+  <div class="bs-example" data-example-id="button-group-nesting">
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	垂直排列按钮组
+  </h2>
+  <div class="bs-example" data-example-id="vertical-button-group">
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+      <button type="button" class="btn btn-default">Button</button>
+      <button type="button" class="btn btn-default">Button</button>
+      <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-default">Button</button>
+      <button type="button" class="btn btn-default">Button</button>
+      <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+          <li><a href="#">Dropdown link</a></li>
+          <li><a href="#">Dropdown link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	单按钮下拉菜单
+  </h2>
+  <div class="bs-example" data-example-id="single-button-dropdown">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+  
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	分裂式按钮下拉菜单
+  </h2>
+  <div class="bs-example" data-example-id="split-button-dropdown">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+  
+  <h2 id="btn-groups-toolbar">
+	<a class="anchorjs-link " href="#btn-groups-toolbar" aria-label="Anchor link for: btn groups toolbar"
+	data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;">
+	</a>
+	按钮大小
+  </h2>
+  <div class="bs-example" data-example-id="button-dropdown-sizing">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Large button <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Small button <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Extra small button <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+  </div>
+   
+</body>
+
+</html>
+
+
