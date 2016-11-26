@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body style="height:100%;">
+    <nav class="navbar navbar-default navbar-fixed-top no-margin">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header fixed-brand">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
+			  <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+			</button>
+			<a class="navbar-brand" style="color: #fff;" href="#"><i class="glyphicon glyphicon-th-large"></i> MyConsole</a>
+		</div><!-- navbar-header-->
+		<a href="login.html" class="head-nav-btn"><i class="glyphicon glyphicon-log-out"></i> 退出</a>
+		<a href="#" class="head-nav-btn"><i class="glyphicon glyphicon-user"></i> 赖志文</a>
+		<a href="#" class="head-nav-btn"><i class="glyphicon glyphicon-comment"></i> 消息<span class="badge">3</span></a>
+    </nav>
+    <div id="wrapper" style="position:absolute;top:50px;bottom:0px;">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+			<div id="sidebarToggleBtn" class="sidebar-fold" ><span id="sidebarToggleBtn-ico" class="fa fa-square"></span></div>
+            <ul class="sidebar-nav nav-stacked" id="menu">
+                <li class="active">
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x " aria-hidden="true"></i></span> 基本信息</a>
+                       <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="test1.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>简介</a></li>
+                        <li><a href="tabs.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>菜单2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x"></i></span> 基本组件</a>
+                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello2.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>Form表单</a></li>
+                        <li><a href="#" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>列表</a></li>
+ 
+                    </ul>
+                </li>
+                <li>
+                    <a href="icons.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>图标(Icon)</a>
+                </li>
+                <li>
+                    <a href="buttons.html" class="J_menuItem"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-play-circle-o fa-stack-1x "></i></span>按钮</a>
+                </li>
+                <li>
+                    <a href="noty1.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span>操作提示</a>
+                </li>
+				<li>
+                    <a href="noty2.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span>操作提示2</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>菜单</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>菜单</a>
+                </li>
+            </ul>
+			<!-- 迷你导航栏 -->
+			<ul class="sidebar-nav nav-stacked" id="menu-mine" style="display:none;">
+                <li class="active">
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="模块1"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x " aria-hidden="true"></i></span>●</a>
+                       <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello.html" class="J_menuItem" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="菜单1"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                        <li><a href="test1.html" class="J_menuItem" data-toggle="tooltip" data-placement="right" title="菜单标题" data-original-title="模块2"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-angle-down fa-stack-1x"></i></span>●</a>
+                    <ul class="nav-pills nav-stacked" style="list-style-type:none;">
+                        <li><a href="hello2.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-flag fa-stack-1x "></i></span>●</a></li>
+                        <li><a href="tabs.html" class="J_menuItem"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users fa-stack-1x "></i></span>●</a></li>
+                    </ul>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x"></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file fa-stack-1x "></i></span>●</a>
+                </li>
+				<li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-taxi fa-stack-1x "></i></span>●</a>
+                </li>
+                
+            </ul>
+			<!--
+			<div id="toggleBtn">
+				<div class="navbar-collapse-inner">
+					<div class="navbar-collapse-bg"></div>
+					<div class="navbar-collapse">
+						<span class="glyphicon glyphicon-transfer"></span>
+					</div>
+				</div>
+			</div>
+			-->
+        </div><!-- /#sidebar-wrapper -->
+
+		<div class="row content-tabs" style="margin-right:0px;">
+			<button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+			</button>
+			<nav class="page-tabs J_menuTabs">
+				<div class="page-tabs-content">
+					<a href="javascript:;" class="active J_menuTab" data-id="hello.html">首页</a>
+				</div>
+			</nav>
+			<button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
+			</button>
+			<div class="btn-group roll-nav roll-right">
+				<button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
+
+				</button>
+				<ul role="menu" class="dropdown-menu dropdown-menu-right">
+					<li class="J_tabShowActive"><a>定位当前选项卡</a>
+					</li>
+					<li class="divider"></li>
+					<li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+					</li>
+					<li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div class="row J_mainContent" id="content-main">
+			<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="hello.html" frameborder="0" data-id="hello.html" seamless></iframe>
+		</div>
+    </div>
+    <!-- /#wrapper
+	<footer class="en text-center navbar-fixed-bottom"> 
+	
+	</footer> -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sidebar_menu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/plugins/layer/layer.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/hplus.min.js"></script>
+	<script src="js/contabs.min.js" type="text/javascript" ></script>
+	
+	<!-- 操作提示 -->
+	<script src="js/plugins/noty/jquery.noty.packaged.js" type="text/javascript" ></script>
+	
+	<!-- 演示用的js，实际开发中可以另行创建，并删除这个保证系统简洁 -->
+	<script src="js/noties.js" type="text/javascript" ></script>
+</body>
+</html>
